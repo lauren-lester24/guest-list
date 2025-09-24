@@ -16,3 +16,17 @@ export async function getAllGuest() {
     
 }
 
+// get single guest
+
+export async function getGuestById(id) {
+try {
+    const response = await fetch(`${API}/guests/${id}`);
+    const result = await response.json();
+    return result.data;
+} catch (error) {
+    console.error("Error Fetching single Guest", error);
+    throw error;
+}
+
+    
+}

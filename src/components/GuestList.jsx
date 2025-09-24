@@ -1,6 +1,6 @@
 
 
-export default function GuestList({guests}) {
+export default function GuestList({guests, setSelectedId}) {
   return (
     <>
     <h1 className="title"> Guest List</h1>
